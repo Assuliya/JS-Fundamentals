@@ -1,6 +1,6 @@
 //Basic 1
 
-// var x = [];
+// let x = [];
 // x.push('coding', 'dojo', 'rocks')
 // x.pop()
 // console.log(x)
@@ -16,9 +16,9 @@
 
 // Basic 3
 
-// var x = [9, 10, 6, 5, -1, 20, 13, 2];
+// let x = [9, 10, 6, 5, -1, 20, 13, 2];
 
-// for(var i = 0; i<x.length; i++){
+// for(let i = 0; i<x.length; i++){
 // 	if(i + 1 == x.length){
 // 		break;
 // 	}
@@ -28,9 +28,9 @@
 
 // Basic 4
 
-// var names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+// let names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
 
-// for(var i = 0; i < names.length; i++){
+// for(let i = 0; i < names.length; i++){
 // 	console.log(names[i].length)
 // }
 
