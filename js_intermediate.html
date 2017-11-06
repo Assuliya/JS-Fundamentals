@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	// Part 1
+	function starString(number){
+		let star = '*'
+		let starify = star.repeat(number)
+		return starify
+	}
+	let stars = starString(8)
+	console.log(stars)
+	//
+
+	// Part 2
+	function drawStars(array){
+		let star = '*'
+		for(i=0; i<array.length; i++){
+			let starify = star.repeat(array[i])
+			console.log(starify)
+		}
+	}
+	let x = [4, 6, 1, 3, 5, 7, 25]
+	drawStars(x)
+	// 
+
+	// Part 3
+	function drawStars(array){
+		let star = '*'
+		for(i=0; i<array.length; i++){
+			if(typeof array[i] === 'string'){
+				let letter = array[i][0].toLowerCase()
+				let number = array[i].length
+				let letterfy = letter.repeat(number)
+				console.log(letterfy)
+			}
+			else{
+				let starify = star.repeat(array[i])
+				console.log(starify)
+			}
+		}	
+	}
+	let y = [4, "Tom", 1, "Michael", 5, 7, "Jimmy Smith"]
+	drawStars(y)
+	//
+</script>
+
+
+<body>
+	<h1>Hello!</h1>
+</body>
+</html>
