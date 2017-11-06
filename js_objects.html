@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Hi!</h1>
+
+<script type="text/javascript">
+	// Challenge 1
+	let students = [
+	    {name: 'Remy', cohort: 'Jan'},
+	    {name: 'Genevieve', cohort: 'March'},
+	    {name: 'Chuck', cohort: 'Jan'},
+	    {name: 'Osmund', cohort: 'June'},
+	    {name: 'Nikki', cohort: 'June'},
+	    {name: 'Boris', cohort: 'June'}
+	];
+	for(x in students){
+		console.log('Name:', students[x].name+",", 'Cohort:', students[x].cohort)
+	}
+	//
+
+	//Challenge 2
+	let users = {
+	    employees: [
+	        {'first_name':  'Miguel', 'last_name' : 'Jones'},
+	        {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+	        {'first_name' : 'Nora', 'last_name' : 'Lu'},
+	        {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+	    ],
+	    managers: [
+	       {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+	       {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+	    ]
+	 };
+
+	console.log('Employees')
+	for(x in users.employees){
+		let employees = users.employees[x]
+		let letter_count = (employees.last_name + employees.first_name).length
+		console.log(x, '-', employees.last_name + ',', employees.first_name, '-', letter_count)
+
+	}
+
+	console.log('Managers')
+	for(x in users.managers){
+		let managers = users.managers[x]
+		let letter_count = (managers.last_name + managers.first_name).length
+		console.log(x, '-', managers.last_name + ',', managers.first_name, '-', letter_count)
+
+	}
+	//
+
+
+</script>
+
+</body>
+</html>
